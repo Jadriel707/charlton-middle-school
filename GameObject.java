@@ -1,6 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+
 
 public abstract class GameObject extends MyRect{
    
@@ -26,6 +27,8 @@ public abstract class GameObject extends MyRect{
             return true;
         return false;
     }
+
+    public void mousePressed(MouseEvent me) {}
 
     
 

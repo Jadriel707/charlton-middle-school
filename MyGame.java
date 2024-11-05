@@ -20,8 +20,8 @@ public class MyGame extends Game  {
     public MyGame() {
         // initialize variables here
         gameScreen=new GameScreen();
-        gameScreen.objects.add(new Grid(100, 100, 14, 12, 50));
-
+        // gameScreen.objects.add(new Grid(100, 100, 14, 12, 50));
+        gameScreen.objects.add(new Menu(400,500,4));
         activeScreen=gameScreen;
     }
     
@@ -38,7 +38,9 @@ public class MyGame extends Game  {
     public void keyTyped(KeyEvent ke) {}
 
     @Override
-    public void keyPressed(KeyEvent ke) {}
+    public void keyPressed(KeyEvent ke) {
+        
+    }
 
     @Override
     public void keyReleased(KeyEvent ke) {}
@@ -47,7 +49,10 @@ public class MyGame extends Game  {
     public void mouseClicked(MouseEvent ke) {}
 
     @Override
-    public void mousePressed(MouseEvent me) {}
+    public void mousePressed(MouseEvent me) {
+        activeScreen.mousePressed(me);
+    }
+    
     
     @Override
     public void mouseMoved(MouseEvent me) {

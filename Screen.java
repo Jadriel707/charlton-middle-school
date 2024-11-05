@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
+import java.awt.event.MouseEvent;
+
 
 
 public abstract class Screen {
@@ -27,6 +29,7 @@ public abstract class Screen {
 
     public void draw(Graphics pen) {}
 
+    public void mousePressed(MouseEvent me) {}
     
 
     

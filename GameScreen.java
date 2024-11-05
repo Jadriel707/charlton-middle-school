@@ -1,4 +1,7 @@
 import java.awt.Graphics;
+import java.awt.event.MouseEvent;
+
+
 public class GameScreen extends Screen {
 
     public GameScreen() {
@@ -19,6 +22,11 @@ public class GameScreen extends Screen {
         }
     }
 
+    public void mousePressed(MouseEvent me) {
+        for(int i=0;i<objects.size();i++) {
+            objects.get(i).mousePressed(me);
+        }
+    }
 
 
     
